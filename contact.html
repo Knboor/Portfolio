@@ -6,13 +6,17 @@
         <meta name = "viewport" content="width=device-width, initial-scale=1">
         <!-- TITLE TAG-->
         <title>Kasandra | Front End Web Developer </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
     </head>
     
     <body>
         <!--HEADER START-->
         <header>
             <!-- Clickable title to home-->
-            <a href ="index.html">
+            <a id="logo" href ="index.html">
                 <h1>Kasandra</h1>
                 <h2>Front End Web Developer</h2>
             </a>
@@ -21,7 +25,7 @@
                 <ul>
                     <li><a href ="index.html">Portfolio</a></li>
                     <li><a href ="about.html">About</a></li>
-                    <li><a href ="#">Contact</a></li>
+                    <li><a href ="#" class="selected">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -55,9 +59,9 @@
     <!--FOOTER START-->
     <footer>
         <!--Clickable link to twitter in new tab-->
-        <a href="https://twitter.com" target="_blank"><img src="img/twitter-wrap.png"></a>
+        <a href="https://twitter.com" target="_blank"><img src="img/twitter-wrap.png" class="social-icon"></a>
         <!--Clickable link to facebook in new tab-->
-        <a href="https://facebook.com" target="_blank"><img src="img/facebook-wrap.png"></a>
+        <a href="https://facebook.com" target="_blank"><img src="img/facebook-wrap.png" class="social-icon"></a>
         <!--Copyright-->
         <p>&copy; 2021 Kasandra</p>
     </footer>

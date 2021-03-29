@@ -6,13 +6,18 @@
         <meta name = "viewport" content="width=device-width, initial-scale=1">
         <!-- TITLE TAG-->
         <title>Kasandra | Front End Web Developer </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
     </head>
     
     <body>
         <!--HEADER START-->
         <header>
             <!-- Clickable title to home-->
-            <a href ="index.html">
+            <a id="logo" href ="index.html">
                 <h1>Kasandra</h1>
                 <h2>Front End Web Developer</h2>
             </a>
@@ -21,15 +26,15 @@
                 <ul>
                     <li><a href ="index.html">Portfolio</a></li>
                     <li><a href ="about.html">About</a></li>
-                    <li><a href ="#">Contact</a></li>
+                    <li><a href ="#" class="selected">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <!--HEADER END-->
         
-         <div>
+         <div id="wrapper">
         <!--Start of first column-->
-            <section>
+            <section id="primary">
                  <!--title-->
                  <h3>General Information</h3>
                 <!--general information paragraph -->
@@ -38,14 +43,14 @@
         <!--End of first column-->
              
         <!--Start of second column-->
-             <section>
+             <section id="secondary">
             <!--title-->
             <h3>Contact Information</h3>
             <!-- Contact info-->
-            <ul>
-                <li><a href="tel:9723104119">(973) 310-4119</a></li>
-                <li><a href="mailto:kasandra.boor@gmail.com">kasandra.boor@sbcglobal.net </a></li>
-                <li><a href="https://twitter.com" target="_blank">@username</a></li>
+            <ul class="contact-info">
+                <li class = "phone"><a href="tel:9723104119">(973) 310-4119</a></li>
+                <li class = "email"><a href="mailto:kasandra.boor@gmail.com">kasandra.boor@sbcglobal.net </a></li>
+                <li class = "twitter"><a href="https://twitter.com" target="_blank">@username</a></li>
                 
             </ul>
             </section>
@@ -55,9 +60,9 @@
     <!--FOOTER START-->
     <footer>
         <!--Clickable link to twitter in new tab-->
-        <a href="https://twitter.com" target="_blank"><img src="img/twitter-wrap.png"></a>
+        <a href="https://twitter.com" target="_blank"><img src="img/twitter-wrap.png" class="social-icon"></a>
         <!--Clickable link to facebook in new tab-->
-        <a href="https://facebook.com" target="_blank"><img src="img/facebook-wrap.png"></a>
+        <a href="https://facebook.com" target="_blank"><img src="img/facebook-wrap.png" class="social-icon"></a>
         <!--Copyright-->
         <p>&copy; 2021 Kasandra</p>
     </footer>
